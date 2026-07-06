@@ -10,10 +10,26 @@
 
 /* append your custom style below */
 
-:root {
-    --avatar-border-color: #2F203C !important;
+:root[data-bs-theme="dark"] {
+    --avatar-border-color: #2F203C00 !important;
 }
 
 #avatar {
     border-radius: 25% !important;
 }
+
+// Copied from inspect element
+#page-category a:hover, #page-tag a:hover, #access-lastmod a:hover, .post-tail-wrapper .license-wrapper > a:hover, .post-edit > a:hover, #search-results a:hover, footer a:hover, #topbar #breadcrumb a:hover, .post-meta a:not([class]):hover, .content a:not(.img-link):hover {
+    color: #ba6bff !important;
+    border-bottom-color: #ba6bff;
+}
+
+:root[data-bs-theme="light"] {
+    --link-color: #f065c7 !important;
+    --link-underline-color: #ffa8e4 !important;
+}
+:root[data-bs-theme="dark"] {
+    --link-color: #e398cc !important;
+    --link-underline-color: #ffa8e4 !important;
+}
+
