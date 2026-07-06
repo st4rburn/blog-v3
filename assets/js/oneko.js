@@ -1,6 +1,6 @@
 // oneko.js: https://github.com/adryd325/oneko.js
 
-(function oneko() {
+document.addEventListener("DOMContentLoaded", function oneko() {
   const isReducedMotion =
     window.matchMedia(`(prefers-reduced-motion: reduce)`) === true ||
     window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
@@ -86,7 +86,7 @@
   };
 
   function init() {
-    let nekoFile = "./oneko.gif"
+    let nekoFile = "/assets/img/oneko.gif"
     const curScript = document.currentScript
     if (curScript && curScript.dataset.cat) {
       nekoFile = curScript.dataset.cat
@@ -276,4 +276,4 @@
   }
 
   init();
-})();
+});
