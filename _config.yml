@@ -218,6 +218,7 @@ exclude:
 
 include:
   - ".well-known"
+  - "_headers"
 
 jekyll-archives:
   enabled: [categories, tags]
