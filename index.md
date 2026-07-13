@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: intro
 title: Hi!
 icon: fa-solid fa-user
 order: 1
