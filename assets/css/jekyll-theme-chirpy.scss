@@ -37,10 +37,10 @@
     --tag-hover: #2b2430 !important;
 }
 
-.btn:not(.btn-link):hover {
+.btn:not(.btn-link):not(#copy-link):hover {
     --bs-btn-hover-bg: #fc68cf !important;
 }
-.btn:not(.btn-link):active {
+.btn:not(.btn-link):not(#copy-link):active {
     --bs-btn-active-bg: #c94da3 !important;
 }
 .btn.btn-outline-primary:not(.disabled):hover {
