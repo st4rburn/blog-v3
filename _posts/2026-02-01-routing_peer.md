@@ -2,7 +2,7 @@
 title: Lab Journal - NetBird Routing Peer
 date: 2026-02-01 17:10:00 +0800
 categories: [Homelab]
-tags: [homelab]
+tags: [homelab, networks]
 ---
 
 # Setting Up a NetBird Routing Peer
