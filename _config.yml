@@ -16,14 +16,14 @@ timezone: Australia/Perth
 
 title: ~st4rburn # the main title
 
-tagline: Test # it will display as the subtitle
+tagline: a.k.a. Miela # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  SOC analyst at Seamless Intelligence Perth
+  Cyber professional from Perth, Western Australia
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: "https://st4rburn.dev"
+url: "https://miela.dev"
 
 github:
   username: st4rburn # change to your GitHub username
@@ -34,11 +34,11 @@ github:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: M Marshall
-  email: memphism2003@gmail.com # change to your email address
+  name: Miela
+  email: me@miela.dev # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://www.linkedin.com/in/memphis-marshall/ # change to your Twitter homepage
+    # - https://www.linkedin.com/in/memphis-marshall/ # change to your Twitter homepage
     - https://github.com/st4rburn # change to your GitHub homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
