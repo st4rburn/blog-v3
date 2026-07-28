@@ -10,8 +10,8 @@
 
 /* append your custom style below */
 
-:root[data-bs-theme="dark"] {
-    --avatar-border-color: #2F203C00 !important;
+:root {
+    --footer-img-height: 150px;
 }
 
 #avatar {
@@ -30,11 +30,11 @@
     --toc-highlight: #e051b5 !important;
     --tag-hover: #e3dee6 !important;
     --btn-share-hover-color: #fc68cf !important;
-    .footer-img {
-        display: none;
-    }
+    // Footer does not look good enough on light mode yet
+    --footer-img-height: 0px;
 }
 :root[data-bs-theme="dark"] {
+    --avatar-border-color: #2F203C00 !important;
     --link-color: #ffa8e4 !important;
     --link-underline-color: #ba7fa8 !important;
     --toc-highlight: #ffa8e4 !important;
@@ -59,4 +59,13 @@ h2.pinned-title {
 ::selection {
     background-color: #FC68CFEA;
     color: #ffffff;
+}
+
+#main-wrapper > .container {
+    min-height: calc(100vh - var(--footer-img-height)) !important;
+}
+.footer-img {
+    height: var(--footer-img-height);
+    background-position: bottom right;
+    background-size: cover;
 }
