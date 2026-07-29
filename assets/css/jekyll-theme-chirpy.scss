@@ -12,6 +12,22 @@
 
 :root {
     --footer-img-height: 150px;
+    // 849px is evaluated from:
+    // _sass/layout/_sidebar.scss
+    // _sass/abstracts/_breakpoints.scss
+    // At '@include bp.lt(bp.get(lg))' in sidebar
+    // lg is defined as 850px in '$-breakpoints' currently, subtract one from this value
+    // to get the max width to set here
+    // Unfortunately we can't just import when using starter setup
+    @media (max-width: 849px) {
+        --footer-img-height: 100px;
+    }
+
+    // From '_sass/abstracts/_variables.scss'
+    --sidebar-width: 260px;
+    @media (min-width: 1650px) {
+        --sidebar-width: 300px;
+    }
 }
 
 #avatar {
@@ -31,7 +47,7 @@
     --tag-hover: #e3dee6 !important;
     --btn-share-hover-color: #fc68cf !important;
     // Footer does not look good enough on light mode yet
-    --footer-img-height: 0px;
+    --footer-img-height: 0px !important;
 }
 :root[data-bs-theme="dark"] {
     --avatar-border-color: #2F203C00 !important;
@@ -68,4 +84,9 @@ h2.pinned-title {
     height: var(--footer-img-height);
     background-position: bottom right;
     background-size: cover;
+    // From '_sass/abstracts/_mixins.scss' - slide
+    transition: transform 0.4s ease;
+}
+[sidebar-display] .footer-img {
+    transform: translateX(var(--sidebar-width));
 }
