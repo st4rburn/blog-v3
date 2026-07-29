@@ -59,10 +59,10 @@
     --highlighter-rouge-color: #fce8f6;
 }
 
-.btn:not(.btn-link):not(#copy-link):hover {
+.btn:not(.btn-link):not(#copy-link):not(.toc-trigger):hover {
     --bs-btn-hover-bg: #fc68cf !important;
 }
-.btn:not(.btn-link):not(#copy-link):active {
+.btn:not(.btn-link):not(#copy-link):not(.toc-trigger):active {
     --bs-btn-active-bg: #c94da3 !important;
 }
 .btn.btn-outline-primary:not(.disabled):hover {
