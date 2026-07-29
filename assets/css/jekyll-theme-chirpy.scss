@@ -10,6 +10,9 @@
 
 /* append your custom style below */
 
+// See below for how we get this figure
+$sidebar-cutoff: 849px;
+
 :root {
     --footer-img-height: 150px;
     // 849px is evaluated from:
@@ -19,7 +22,7 @@
     // lg is defined as 850px in '$-breakpoints' currently, subtract one from this value
     // to get the max width to set here
     // Unfortunately we can't just import when using starter setup
-    @media (max-width: 849px) {
+    @media (max-width: $sidebar-cutoff) {
         --footer-img-height: 100px;
     }
 
@@ -91,7 +94,7 @@ h2.pinned-title {
     transition: transform 0.4s ease;
 }
 [sidebar-display] .footer-img {
-    @media (max-width: 849px) {
+    @media (max-width: $sidebar-cutoff) {
         transform: translateX(var(--sidebar-width));
     }
 }
