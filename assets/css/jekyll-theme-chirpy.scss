@@ -79,6 +79,7 @@ h2.pinned-title {
     color: #ffffff;
 }
 
+// Footer stuff
 #main-wrapper > .container {
     min-height: calc(100vh - var(--footer-img-height)) !important;
 }
@@ -93,4 +94,10 @@ h2.pinned-title {
     @media (max-width: 849px) {
         transform: translateX(var(--sidebar-width));
     }
+}
+// This produces a weird gradient at the bottom of the page that's not over the article
+// content but is over the background, despite being the same colour. Removed this as
+// it seems to serve no purpose but breaks footer image.
+#toc-wrapper::before, .toc-border-cover, #toc-wrapper::after {
+    background: transparent !important;
 }
