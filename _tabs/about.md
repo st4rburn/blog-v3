@@ -19,4 +19,4 @@ Most of these will eventually be written into blog posts for those who are inter
 
 ## Contact
 
-LinkedIn or directly via email are preferred, you can find these on the bottom-left of the page. You can also contact me on Discord **@aurillium**.
+LinkedIn or directly via email are preferred, you can find these on the bottom-left of the page. You can also contact me on Discord `@st4rburn.`.
