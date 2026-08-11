@@ -31,6 +31,8 @@ $sidebar-cutoff: 849px;
     @media (min-width: 1650px) {
         --sidebar-width: 300px;
     }
+    
+    --badge-border-size: 2px;
 }
 
 #avatar {
@@ -103,4 +105,18 @@ h2.pinned-title {
 // it seems to serve no purpose but breaks footer image.
 #toc-wrapper::before, .toc-border-cover, #toc-wrapper::after {
     background: transparent !important;
+}
+
+.badge88x31 > img {
+    // 88x31, but make room for the border
+    width: calc(88px + var(--badge-border-size) * 2);
+    height: calc(31px + var(--badge-border-size) * 2);
+    border: var(--badge-border-size) solid rgba(0, 0, 0, 0);
+    transition: none;
+}
+.badge88x31 > img:hover {
+    border: var(--badge-border-size) solid #fff;
+}
+.badge88x31 {
+    margin-right: 8px;
 }
