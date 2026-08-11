@@ -26,3 +26,4 @@ LinkedIn or directly via email are preferred, you can find these on the bottom-l
 <a href="https://lyra.horse/" class="badge88x31"><img src="/assets/img/buttons/lyra.horse.png"></a>
 <a href="https://eva.ac/" class="badge88x31"><img src="/assets/img/buttons/eva.ac-badge.png"></a>
 <a href="https://seall.dev/" class="badge88x31"><img src="/assets/img/buttons/sealldev.gif"></a>
+<a href="https://enjarai.dev/" class="badge88x31"><img src="/assets/img/buttons/enjarai.png"></a>
