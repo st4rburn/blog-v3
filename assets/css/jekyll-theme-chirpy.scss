@@ -15,6 +15,8 @@ $sidebar-cutoff: 849px;
 
 :root {
     --footer-img-height: 150px;
+    --badge-spacing: 8px;
+    --badge-scale: 1;
     // 849px is evaluated from:
     // _sass/layout/_sidebar.scss
     // _sass/abstracts/_breakpoints.scss
@@ -24,14 +26,16 @@ $sidebar-cutoff: 849px;
     // Unfortunately we can't just import when using starter setup
     @media (max-width: $sidebar-cutoff) {
         --footer-img-height: 100px;
+        --badge-spacing: 6px;
     }
 
     // From '_sass/abstracts/_variables.scss'
     --sidebar-width: 260px;
     @media (min-width: 1650px) {
         --sidebar-width: 300px;
+        --badge-scale: 2;
     }
-    
+
     --badge-border-size: 2px;
 }
 
@@ -109,8 +113,8 @@ h2.pinned-title {
 
 .badge88x31 > img {
     // 88x31, but make room for the border
-    width: calc(88px + var(--badge-border-size) * 2);
-    height: calc(31px + var(--badge-border-size) * 2);
+    width: calc(88px * var(--badge-scale) + var(--badge-border-size) * 2);
+    height: calc(31px * var(--badge-scale) + var(--badge-border-size) * 2);
     border: var(--badge-border-size) solid rgba(0, 0, 0, 0);
     transition: none;
     // Prevent smoothing if scaled
@@ -122,5 +126,7 @@ h2.pinned-title {
     border: var(--badge-border-size) solid #fff;
 }
 .badge88x31 {
-    margin-right: 8px;
+    margin-right: var(--badge-spacing);
+    margin-bottom: var(--badge-spacing);
+    border-bottom: revert !important;
 }
