@@ -22,6 +22,7 @@ Most of these will eventually be written into blog posts for those who are inter
 LinkedIn or directly via email are preferred, you can find these on the bottom-left of the page. You can also contact me on Discord `@st4rburn.`.
 
 #### Interesting People
+<a href="https://st4rburn.dev/" class="badge88x31"><img src="/assets/img/buttons/st4rburn.png"></a>
 <a href="https://adryd.com/" class="badge88x31"><img src="/assets/img/buttons/adryd.png"></a>
 <a href="https://lyra.horse/" class="badge88x31"><img src="/assets/img/buttons/lyra.horse.png"></a>
 <a href="https://eva.ac/" class="badge88x31"><img src="/assets/img/buttons/eva.ac-badge.png"></a>
