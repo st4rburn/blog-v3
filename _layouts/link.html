@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<!-- Redirect page -->
+
+{% include lang.html %}
+
+{% include toc-status.html %}
+
+{% assign tab_key = page.title | downcase %}
+{% assign title = site.data.locales[lang].tabs[tab_key] | default: page.title %}
+
+<article class="px-1">
+  <h1 class="dynamic-title">
+    Redirecting to '{{ title }}'...
+  </h1>
+  <div class="content">
+    If you are not automatically redirected, click <a href="{{ page.href }}">here</a>. Location: <strong>{{ page.href }}</strong>
+    <br><br>
+    {{ content }}
+  </div>
+  <script>
+    window.location.replace("{{ page.href }}");
+  </script>
+</article>
