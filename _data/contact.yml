@@ -10,17 +10,17 @@
 #- type: twitter
 #  icon: "fa-brands fa-x-twitter"
 
-- type: mastodon
-  icon: 'fab fa-mastodon'                  # icons powered by <https://fontawesome.com/>
-  url:  'https://infosec.exchange/@miela'  # Fill with your Mastodon account page, rel="me" will be applied for verification
+#- type: mastodon
+#  icon: 'fab fa-mastodon'                  # icons powered by <https://fontawesome.com/>
+#  url:  'https://infosec.exchange/@miela'  # Fill with your Mastodon account page, rel="me" will be applied for verification
 
 - type: email
   icon: "fas fa-envelope"
   noblank: true # open link in current tab
 
-#- type: rss
-#  icon: "fas fa-rss"
-#  noblank: true
+- type: rss
+  icon: "fas fa-rss"
+  noblank: true
 
 # Uncomment and complete the url below to enable more contact options
 #
